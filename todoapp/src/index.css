@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-afaK3bc0uAUawDmSDewuXauCuPHRXnED-XfzF8-4Yso2hUPu9Q4Jafo0l-6gGgyH9D8&usqp=CAU');
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.add-item{
+   margin: auto;
+   width: max-content;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+.add-item input,.added-items{
+  margin: auto;
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+ 
+  font-size: larger;
+  }
+.plus-btn{
+  font-size:large;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -40px;
+  
+}
+.each-item{
+  background-color: black;
+  color: antiquewhite;
+  margin: auto;
+  width: 500px;
+  height: 36px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+
+}
+
+input{
+  font-weight: 800;
+}
+
+.btn button{
+  width: 300px;
+  padding:8px 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: larger;
+  background-color:rgba(139, 69, 19, 0.664);
+  border: 2px solid rgb(94, 41, 3);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+   justify-content: center;
+} 
+.todoIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+}
+.each-item:hover{
+  background-color:  rgba(85, 24, 0, 0.836);
+ }
+ h1{
+   color: aliceblue;
+ }
+ .todoContent{
+  overflow-x: hidden;
+ }
+ .each-todo{
+  cursor: pointer;
+ }
