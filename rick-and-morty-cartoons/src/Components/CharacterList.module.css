@@ -1,0 +1,21 @@
+.characterlist{
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+    border: 1px solid black;
+    width: 85%;
+}
+
+.paginition{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.paginition>button{
+    border: 1px solid black;
+}
