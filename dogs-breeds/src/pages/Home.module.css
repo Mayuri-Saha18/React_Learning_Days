@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(100px, 1fr);
+  gap: 10px;
+  /* border: 1px solid black; */
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 488px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.breedDiv {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 100%;
+}
+.breedDiv:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.breedDiv > a {
+  text-decoration: none;
+  color: black;
+}

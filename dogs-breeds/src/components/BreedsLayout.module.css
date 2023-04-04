@@ -1,0 +1,15 @@
+.breedImage {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+  /* cursor: pointer; */
+  height: 100%;
+}
+.breedImage:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
