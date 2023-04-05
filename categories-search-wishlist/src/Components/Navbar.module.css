@@ -1,0 +1,22 @@
+.navbar{
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+
+
+}
+.navbarDiv{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarDiv>a{
+    text-decoration: none;
+    color: black;
+}
+.navbarDiv h2:hover{
+    color: blue;
+    cursor: pointer;
+}

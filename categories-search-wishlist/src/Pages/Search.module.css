@@ -1,0 +1,15 @@
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card>img{
+    width: 30%;
+}
+.container{
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    border: 1px solid black;
+}

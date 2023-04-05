@@ -17,7 +17,7 @@ const Puppy = () => {
         .get(`https://dog.ceo/api/breed/${breed}/images`)
         .then((res) => {
           setBreedList(res.data.message);
-          //   console.log(res.data.message);
+          console.log(res.data.message);
         })
         .catch((err) => {
           console.log("Something went wrong");
