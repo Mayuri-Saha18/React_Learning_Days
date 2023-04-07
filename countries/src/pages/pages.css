@@ -1,0 +1,37 @@
+.outerbox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto,200px);
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+}
+.outerbox>*{
+    text-align: left;
+}
+
+
+.actionbox{
+    width: 50%;
+    margin: auto;
+}
+.actionbox>*{
+    margin: 1rem;
+}
+  
+@media screen and (min-width: 300px) and (max-width: 760px) { 
+    /* STYLES HERE */
+    .outerbox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      
+    }
+}
+@media screen and (min-width: 780px) and (max-width: 1080px) { 
+    /* STYLES HERE */
+    .outerbox{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+      
+    }
+}
