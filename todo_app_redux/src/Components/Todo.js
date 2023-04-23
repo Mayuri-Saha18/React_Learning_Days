@@ -38,10 +38,10 @@ const Todo = ({toggleTodo,task,completed,id,removeTodo,updateTodo}) => {
         
         <div className='Todo-buttons'>
         <button onClick={()=>setIsEditing(true)}>
-                <i className='fas fa-pen'></i>
+                Edit
             </button>
             <button onClick={removeTodo}>
-                <i className='fas fa-trash'></i>
+            Delete
             </button>
         </div>
     </TransitionGroup>

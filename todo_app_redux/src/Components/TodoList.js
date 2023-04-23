@@ -37,9 +37,12 @@ dispatch(updateTodo({id,updatedTask}))
                         task={todo.task}
                         completed={todo.completed}
                         toggleTodo={()=>dispatch(completeTodo(todo))}
+
                         removeTodo={()=>dispatch(removeTodo(todo))}
+
                         updateTodo={update}
                         />
+
                     </CSSTransition>
                 )
             })}
