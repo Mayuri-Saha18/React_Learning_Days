@@ -87,6 +87,7 @@ export const Dashboard = () => {
     };
     dispatch(updateData(editData)).then(() => {
       dispatch(getAllData);
+      alert("Book edited");
     });
   };
 
