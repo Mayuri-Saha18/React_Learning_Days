@@ -145,6 +145,8 @@ export const Dashboard = () => {
             <option value="comedy">Comedy</option>
             <option value="horror">Horror</option>
             <option value="romance">Romance</option>
+            <option value="science">Science</option>
+            <option value="fiction">Fiction</option>
           </Select>
           <FormLabel>Publisher</FormLabel>
           <Input

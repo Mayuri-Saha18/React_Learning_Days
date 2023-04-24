@@ -1,9 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useEffect ,useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllData } from '../Redux/DashboardRedux/action';
+import { Flex, Select } from "@chakra-ui/react";
 import "./BookPage.css";
 
 export const BookPage = () => {
+
+  const [selectedGenre, setSelectedGenre] = useState("");
+  const [selectedSort, setSelectedSort] = useState("");
+
 
   const adminData = useSelector((store) => store.DashBoardReducer.adminData);
 const dispatch=useDispatch();
@@ -13,11 +18,42 @@ const dispatch=useDispatch();
   useEffect(() => {
     dispatch(getAllData);
   }, []);
+  const filteredData = adminData.filter((el) =>
+  selectedGenre === "" ? true : el.genre === selectedGenre
+);
+
+const sortedData = selectedSort === "asc" ? filteredData.sort((a, b) => a.cost - b.cost) : selectedSort === "desc" ? filteredData.sort((a, b) => b.cost - a.cost) : filteredData;
 
   return (
     <div>
+      <Flex alignItems="center" justifyContent="center" w={"100%"} m={"1rem 0"}>
+        <Select
+          placeholder="Filter by genre"
+          width="300px"
+          mr="2rem"
+          value={selectedGenre}
+          onChange={(e) => setSelectedGenre(e.target.value)}
+        >
+          <option value="">All</option>
+          <option value="science">Science</option>
+          <option value="fiction">Fiction</option>
+          <option value="action">Action</option>
+          <option value="comedy">Comedy</option>
+          <option value="horror">Horror</option>
+          <option value="romance">Romance</option>
+        </Select>
+
+        <Select placeholder="Sort by price" width="300px"  value={selectedSort}
+          onChange={(e) => setSelectedSort(e.target.value)}>
+            <option value="">None</option>
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </Select>
+      </Flex>
+    
+    <div className='container1'>
       {
-        adminData.map((el)=>{
+        sortedData.map((el)=>{
           return(
             <div className='container'>
               <div className='cards'>
@@ -38,6 +74,7 @@ const dispatch=useDispatch();
           )
         })
       }
+    </div>
     </div>
   )
 }
