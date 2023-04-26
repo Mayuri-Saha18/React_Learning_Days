@@ -1,19 +1,294 @@
 {
-  "posts": [
+  "data": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Prohaska-Baker",
+      "cuisine": [
+        "Sweets",
+        "Snacks",
+        "Beverages"
+      ],
+      "price": 532,
+      "delivery": 17,
+      "payments": "upi",
+      "stars": 3
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Heidenreich-Terry",
+      "cuisine": [
+        "Sweets",
+        "Snacks"
+      ],
+      "price": 289,
+      "delivery": 41,
+      "payments": "cash",
+      "stars": 5
+    },
+    {
+      "id": 3,
+      "name": "Smith, Abernathy and Reichel",
+      "cuisine": [
+        "Italian",
+        "Mexicon",
+        "Asian"
+      ],
+      "price": 407,
+      "delivery": 17,
+      "payments": "card",
+      "stars": 4
+    },
+    {
+      "id": 4,
+      "name": "Kozey Cafe",
+      "cuisine": [
+        "Sweets",
+        "Snacks"
+      ],
+      "price": 927,
+      "delivery": 50,
+      "payments": "upi",
+      "stars": 5
+    },
+    {
+      "id": 5,
+      "name": "Carter-Altenwerth",
+      "cuisine": [
+        "Sweets",
+        "Snacks"
+      ],
+      "price": 387,
+      "delivery": 36,
+      "payments": "card",
+      "stars": 5
+    },
+    {
+      "id": 6,
+      "name": "Homenick-Huels",
+      "cuisine": [
+        "Mexicon",
+        "Asian"
+      ],
+      "price": 711,
+      "delivery": 39,
+      "payments": "cash",
+      "stars": 5
+    },
+    {
+      "id": 7,
+      "name": "Dietrich, Schaden and Mohr",
+      "cuisine": [
+        "Italian",
+        "Mexicon"
+      ],
+      "price": 885,
+      "delivery": 35,
+      "payments": "upi",
+      "stars": 4
+    },
+    {
+      "id": 8,
+      "name": "Schamberger, Bosco and Veum",
+      "cuisine": [
+        "Snacks",
+        "Beverages"
+      ],
+      "price": 519,
+      "delivery": 19,
+      "payments": "cash",
+      "stars": 3
+    },
+    {
+      "id": 9,
+      "name": "Crist, Mueller and Yost",
+      "cuisine": [
+        "Sweets",
+        "Snacks"
+      ],
+      "price": 465,
+      "delivery": 15,
+      "payments": "card",
+      "stars": 5
+    },
+    {
+      "id": 10,
+      "name": "Mosciski-Trantow",
+      "cuisine": [
+        "Italian",
+        "Mexicon"
+      ],
+      "price": 249,
+      "delivery": 25,
+      "payments": "cash",
+      "stars": 3
+    },
+    {
+      "id": 11,
+      "name": "Spencer-Mertz",
+      "cuisine": [
+        "Italian",
+        "Mexicon"
+      ],
+      "price": 680,
+      "delivery": 15,
+      "payments": "upi",
+      "stars": 1
+    },
+    {
+      "id": 12,
+      "name": "Mertz-Shields",
+      "cuisine": [
+        "Mexicon",
+        "Asian"
+      ],
+      "price": 334,
+      "delivery": 49,
+      "payments": "cash",
+      "stars": 2
+    },
+    {
+      "id": 13,
+      "name": "O'Reilly-Veum",
+      "cuisine": [
+        "Mexicon",
+        "Asian"
+      ],
+      "price": 410,
+      "delivery": 23,
+      "payments": "card",
+      "stars": 1
+    },
+    {
+      "id": 14,
+      "name": "Miller Cafe",
+      "cuisine": [
+        "Snacks",
+        "Beverages"
+      ],
+      "price": 276,
+      "delivery": 32,
+      "payments": "upi",
+      "stars": 2
+    },
+    {
+      "id": 15,
+      "name": "Vandervort-Senger",
+      "cuisine": [
+        "Continental",
+        "Sweets"
+      ],
+      "price": 989,
+      "delivery": 32,
+      "payments": "card",
+      "stars": 3
+    },
+    {
+      "id": 16,
+      "name": "Lowe-Smitham",
+      "cuisine": [
+        "Italian",
+        "Beverages"
+      ],
+      "price": 280,
+      "delivery": 50,
+      "payments": "upi",
+      "stars": 5
+    },
+    {
+      "id": 17,
+      "name": "Walker Cafe",
+      "cuisine": [
+        "Snacks",
+        "Beverages"
+      ],
+      "price": 640,
+      "delivery": 49,
+      "payments": "cash",
+      "stars": 2
+    },
+    {
+      "id": 18,
+      "name": "Oberbrunner Restaurant",
+      "cuisine": [
+        "Mexicon",
+        "Snacks",
+        "Beverages"
+      ],
+      "price": 388,
+      "delivery": 18,
+      "payments": "card",
+      "stars": 1
+    },
+    {
+      "id": 19,
+      "name": "Macejkovic Restaurant",
+      "cuisine": [
+        "Mexicon",
+        "Sweets"
+      ],
+      "price": 734,
+      "delivery": 42,
+      "payments": "cash",
+      "stars": 1
+    },
+    {
+      "id": 20,
+      "name": "Balistreri Food Corner",
+      "cuisine": [
+        "Snacks",
+        "Beverages"
+      ],
+      "price": 477,
+      "delivery": 15,
+      "payments": "upi",
+      "stars": 3
+    },
+    {
+      "id": "657ebd7c-0001-42ee-b15a-8e245255b819",
+      "name": "Creme and bakes",
+      "cuisine": [
+        "Sweets",
+        "Cakes"
+      ],
+      "price": "568",
+      "delivery": "52",
+      "payments": "upi",
+      "stars": "2"
+    },
+    {
+      "id": "90b840cd-55a7-4fbf-847c-9d0d36518869",
+      "name": "Indian Mania",
+      "cuisine": [
+        "Indian",
+        "Thai",
+        "Beverages"
+      ],
+      "price": "760",
+      "delivery": "33",
+      "payments": "cash",
+      "stars": "5"
+    },
+    {
+      "id": "cc8dc78e-13c6-4abb-926f-42a0a6ce243b",
+      "name": "Web developer",
+      "cuisine": [
+        "vfbtbth"
+      ],
+      "price": "1233",
+      "delivery": "5",
+      "payments": "upi",
+      "stars": "3"
+    },
+    {
+      "id": "9a29ea8b-6b65-43e8-9c58-ed90b766cb4b",
+      "name": "shows",
+      "cuisine": [
+        "vrbr"
+      ],
+      "price": "22334",
+      "delivery": "",
+      "payments": "upi",
+      "stars": "2"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
