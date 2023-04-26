@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div>
-      <h1>Cart Website made by Vivek Goswami</h1>
       <Header />
       <Routes>
         <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
