@@ -1,0 +1,17 @@
+.productscontainer{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: auto;
+    width: 90%;
+}
+.button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}

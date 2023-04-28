@@ -1,0 +1,14 @@
+.productcard{
+    border: 1px solid greenyellow;
+}
+.addbtn{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+}
