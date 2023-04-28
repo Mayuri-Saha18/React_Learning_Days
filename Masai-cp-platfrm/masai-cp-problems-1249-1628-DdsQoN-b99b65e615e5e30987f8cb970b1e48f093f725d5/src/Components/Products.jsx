@@ -1,47 +1,27 @@
 // import React, { useState } from 'react';
-// import ProductCard from './ProductCard';
-// import styles from "./Products.module.css"
 
 // const Products = () => {
-//   const [products,setProducts]=useState([])
-//   const getProducts=()=>{
-//     fetch(`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`)
-//     .then((res)=>res.json())
-//     .then((res)=>{
-//       setProducts(res);
-//       console.log(res)
-//     })
-//     .catch((err)=>console.log(err))
-//   }
-//   const showProduct=()=>{
-//     getProducts();
-//   }
 //   return (
-
-
 //     <div>
-//       <button className={styles.button} onClick={showProduct} data-testid="get-btn">Get Products</button>
+//       <button data-testid="get-btn">Get Products</button>
 //       <div className="dashboard">
 //         <h1>Dashboard</h1>
 //         <div>
 //           <h1>Cart</h1>
 //           {/* import cart component here */}
 //         </div>
-//         <div className={styles.productscontainer} data-testid="products-container">{/* map thorugh products */}
-//         {products.map((el)=>(
-//           <ProductCard key={el.id} {...el} />
-//         ))}
-        
-//         </div>
+//         <div data-testid="products-container">{/* map thorugh products */}</div>
 //       </div>
 //     </div>
 //   );
 // };
 
 // export default Products;
+
+
 import React, { useState } from 'react';
 import ProductCard from './ProductCard';
-// import CartComponent from './CartComponent';
+import CartComponent from './CartComponent';
 import styles from "./Products.module.css"
 
 const Products = () => {
@@ -65,15 +45,17 @@ return (
 {showProducts ? (
 <button className={styles.button} onClick={showProduct} data-testid="get-btn">Get Products</button>
 ) : null}
-<div className="dashboard">
+<div className="dashboard" style={{ display: showProducts ? 'none' : 'block' }}>
 <h1>Dashboard</h1>
 <div>
 <h1>Cart</h1>
-{/* <CartComponent /> */}
+<CartComponent /> 
 </div>
 <div className={styles.productscontainer} data-testid="products-container">
-{products.map((el)=>(
+{products.map((el)=> (
+
 <ProductCard key={el.id} {...el} />
+
 ))}
 </div>
 </div>
