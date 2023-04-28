@@ -23,6 +23,7 @@ function ProductDetailsPage() {
     const newObj = { ...ele, qty: 1 };
     addToProductArray.push(newObj);
     localStorage.setItem("product", JSON.stringify(addToProductArray));
+    alert("added to cart successfully")
   };
 
   return (

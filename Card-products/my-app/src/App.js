@@ -8,7 +8,9 @@ import Order from ".//Components/OrdersPage/OrdersPage";
 function App() {
   return (
     <>
+    
       <Routes>
+
         <Route path="/" element={<ProductPage />} />
         <Route path="/product/:id" element={<ProductDetailsPage />} />
         <Route path="/cart" element={<Cart />} />

@@ -11,9 +11,9 @@ function CartPage() {
   const navigate = useNavigate();
 
   let total = 0;
-  prod.map((ele) => {
-    return (total += ele.price);
-  });
+  // prod.map((ele) => {
+  //   return (total += ele.price);
+  // });
 
   const oderAdd = JSON.parse(localStorage.getItem("order-product")) || [];
   const handleOrder = (prod) => {
@@ -25,12 +25,17 @@ function CartPage() {
 
   const handleQty = (val, id) => {
     console.log(id);
-    setTemp(
-      temp.map((item) =>
-        item.id === id ? { ...item, qty: item.qty + val } : item
-      )
-    );
-    console.log(temp);
+    const updatedTemp = temp.map((item) =>
+    item.id === id ? { ...item, qty: item.qty + val } : item
+  );
+  setTemp(updatedTemp);
+  console.log(temp);
+
+  // Remove items with qty < 1 from localStorage
+  const updatedProd = updatedTemp.filter((item) => item.qty > 0);
+  localStorage.setItem("product", JSON.stringify(updatedProd));
+
+  setTemp(updatedProd);
   };
 
   return (
@@ -38,7 +43,8 @@ function CartPage() {
       <div className="cart">
         {temp &&
           temp.map((ele) => {
-            total += Number(Math.ceil(ele.qty / 2)) * Number(ele.price);
+            // total += Number(Math.ceil(ele.qty / 2)) * Number(ele.price);
+            total += Number(ele.qty) * Number(ele.price);
             return (
               <div className="cart-mini">
                 <img src={ele.image} alt="" />
