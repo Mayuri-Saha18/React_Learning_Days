@@ -1,0 +1,27 @@
+.newProd {
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  gap: 40px;
+}
+
+.prod-img {
+  height: 500px;
+  width: 40%;
+}
+
+.prod-img img {
+  width: 100%;
+}
+
+.prod-details {
+  width: 40%;
+}
+
+.prod-btn {
+  height: 50px;
+  width: 90%;
+  margin: auto;
+}
